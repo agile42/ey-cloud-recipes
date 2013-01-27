@@ -15,7 +15,7 @@ env = node[:environment][:framework_env]
 PAPERTRAIL_CONFIG = {
   :syslog_ng_version         => '3.3.5',
   :remote_syslog_gem_version => '~>1.6',
-  :port                      => 11111111111111, # YOUR PORT HERE
+  :port                      => 61295, # YOUR PORT HERE
   :hostname                  => [app_name, node[:instance_role], `hostname`.chomp].join('_'),
   :other_logs => [
     '/var/log/engineyard/nginx/*log',
